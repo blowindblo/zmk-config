@@ -12,19 +12,19 @@
 #define RAISE   2
 #define FNC   3
 
-/ {
-    combos {
-        compatible = "zmk,combos";
-        combo_esc {
-            timeout-ms = <50>;
-            key-positions = <2 3>;
-            bindings = <&kp ESC>;
-            layers = <-1>;
-        };
-    };
-};
+
 
 / {
+	    combos {
+		compatible = "zmk,combos";
+		combo_esc {
+		    timeout-ms = <50>;
+		    key-positions = <22 23>;
+		    bindings = <&kp ESC>;
+		    layers = <-1>;
+		};
+	    };
+	    
 	keymap {
 		compatible = "zmk,keymap";
 
