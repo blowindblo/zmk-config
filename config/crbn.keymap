@@ -21,7 +21,6 @@
 		    timeout-ms = <50>;
 		    key-positions = <22 23>;
 		    bindings = <&kp ESC>;
-		    layers = <-1>;
 		};
 	};
 	    
