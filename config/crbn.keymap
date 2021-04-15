@@ -56,7 +56,7 @@
 		fnc {
 			bindings = <
 				&reset &bootloader &bt BT_CLR &bt BT_PRV &bt BT_NXT &trans &trans &trans &trans &trans &trans &trans
-				&trans &trans &trans &trans &kp	C_BRI_UP &ko C_BRI_DN &trans &trans &trans &trans &trans &trans
+				&trans &trans &trans &trans &kp	C_BRI_UP &kp C_BRI_DN &trans &trans &trans &trans &trans &trans
 				&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
 				&trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
 			>;
