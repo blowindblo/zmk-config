@@ -12,6 +12,17 @@
 #define RAISE   2
 #define FNC   3
 
+/ {
+    combos {
+        compatible = "zmk,combos";
+        combo_esc {
+            timeout-ms = <50>;
+            key-positions = <22 23>;
+            bindings = <&kp ESC>;
+            layers = <-1>;
+        };
+    };
+};
 
 / {
 	keymap {
@@ -27,7 +38,7 @@
 				&trans  &kp Q    &kp W &kp E &kp R &kp T  &kp Y   &kp U  &kp I    &kp O   &kp P    &kp BSPC
 				&kp TAB  &kp A    &kp S &kp D &kp F &kp G  &kp H   &kp J  &kp K    &kp L   &kp SEMI &kp SQT
 				&kp LSHFT &kp Z    &kp X &kp C &kp V &kp B  &kp N   &kp M  &kp COMMA &kp DOT &kp FSLH &kp RET
-				&mo 3  &kp LGUI &kp LALT &kp LCTRL &kp LOWER &kp ESC &kp SPACE &mo RAISE &kp LEFT &kp DOWN &kp UP &kp RIGHT
+				&mo 3  &kp LGUI &kp LALT &kp LCTRL &mo LOWER &kp ESC &kp SPACE &mo RAISE &kp LEFT &kp DOWN &kp UP &kp RIGHT
 			>;
 
 			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
