@@ -40,7 +40,7 @@
 		};
 		combo_square_left {
 			timeout-ms = <35>;
-		    key-positions = <15 27>;	// d v 
+		    key-positions = <15 28>;	// d v 
 		    bindings = <&kp LBKT>;
 		};
 		combo_square_right {
