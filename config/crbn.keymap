@@ -28,7 +28,6 @@
 		    key-positions = <1 2>;		\\ q w
 		    bindings = <&kp DEL>;
 		};
-
 		combo_curly_left {
 			timeout-ms = <35>;
 		    key-positions = <15 16>;	\\ d f 
