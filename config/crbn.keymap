@@ -25,27 +25,27 @@
 		};
 		combo_del {
 		    timeout-ms = <35>;
-		    key-positions = <1 2>;		\\ q w
+		    key-positions = <1 2>;		// q w
 		    bindings = <&kp DEL>;
 		};
 		combo_curly_left {
 			timeout-ms = <35>;
-		    key-positions = <15 16>;	\\ d f 
+		    key-positions = <15 16>;	// d f 
 		    bindings = <&kp LBRC>;
 		};
 		combo_curly_right {
 			timeout-ms = <35>;
-		    key-positions = <19 20>;	\\ j k
+		    key-positions = <19 20>;	// j k
 		    bindings = <&kp RBRC>;
 		};
 		combo_square_left {
 			timeout-ms = <35>;
-		    key-positions = <15 27>;	\\ d v 
+		    key-positions = <15 27>;	// d v 
 		    bindings = <&kp LBKT>;
 		};
 		combo_square_right {
 			timeout-ms = <35>;
-		    key-positions = <20 31>;	\\ m k
+		    key-positions = <20 31>;	// m k
 		    bindings = <&kp RBKT>;
 		};
 
