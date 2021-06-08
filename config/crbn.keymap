@@ -78,7 +78,7 @@
 			compatible = "zmk,behavior-mod-morph";
 			label = "enc_tab";
 			#binding-cells = <0>;
-			bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>, <&kp LS(TAB)>;
+			bindings = <&kp C_VOL_DN>, <&kp LS(TAB)>;
 			mods = <(MOD_LCTL|MOD_RCTL)>;
 		};
 
