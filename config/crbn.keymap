@@ -111,7 +111,7 @@
 			&sk LSHFT	   	&kp Z		 &kp X 		   &kp C 		 &kp V 		   &kp B 		&kp N			&kp M  		 		&kp COMMA 		&kp DOT 	&kp UP	 		&kp RET
 			&mo FNC 		&kp LGUI 	 &kp LALT 	   &kp LCTRL 	 &mo LOWER 	   &kp BSPC		&kp SPACE		&lt RAISE SPACE 	&kp RCTRL	 	&kp LEFT	&kp DOWN 		&kp RIGHT
 			>;
-			sensor-bindings = <&inc_dec_kp &enct &encst>;
+			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
 		};
 
 		lower {
