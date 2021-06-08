@@ -17,23 +17,7 @@
 // west build -p -b nice_nano -- -DSHIELD=crbn -DZMK_CONFIG="C:\Users\Jolene\zmk-config\config"
 
 / {
-	behaviors {
-   		enct: enc_tab {
-			compatible = "zmk,behavior-mod-morph";
-			label = "enc_tab";
-			#binding-cells = <0>;
-			bindings = <&inc_dec_kp C_VOL_DN>, <&kp LS(TAB)>;
-			mods = <(MOD_LCTL|MOD_RCTL)>;
-		};
 
-    		encst: enc_shift_tab {
-			compatible = "zmk,behavior-mod-morph";
-			label = "enc_shift_tab";
-			#binding-cells = <0>;
-			bindings = <&inc_dec_kp C_VOL_UP>, <&kp TAB>;
-			mods = <(MOD_LCTL|MOD_RCTL)>;
-		};
-	};
 
 	combos {
 		compatible = "zmk,combos";
@@ -88,7 +72,25 @@
 		    bindings = <&kp RBKT>;
 		};	
 	};
-   
+	
+	behaviors {
+   		enct: enc_tab {
+			compatible = "zmk,behavior-mod-morph";
+			label = "enc_tab";
+			#binding-cells = <0>;
+			bindings = <&inc_dec_kp C_VOL_DN>, <&kp LS(TAB)>;
+			mods = <(MOD_LCTL|MOD_RCTL)>;
+		};
+
+    		encst: enc_shift_tab {
+			compatible = "zmk,behavior-mod-morph";
+			label = "enc_shift_tab";
+			#binding-cells = <0>;
+			bindings = <&inc_dec_kp C_VOL_UP>, <&kp TAB>;
+			mods = <(MOD_LCTL|MOD_RCTL)>;
+		};
+	};
+	
 	keymap {
 		compatible = "zmk,keymap";
 
