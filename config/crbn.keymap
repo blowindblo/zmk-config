@@ -78,7 +78,7 @@
 			compatible = "zmk,behavior-mod-morph";
 			label = "enc_tab";
 			#binding-cells = <0>;
-			bindings = <&kp Q>, <&kp LC(LS(TAB))>;
+			bindings = <&kp Q>, <&kp TAB>;
 			mods = <(MOD_LCTL|MOD_RCTL)>;
 		};
 
@@ -86,7 +86,7 @@
 			compatible = "zmk,behavior-mod-morph";
 			label = "enc_shift_tab";
 			#binding-cells = <0>;
-			bindings = <&kp W>, <&kp TAB>;
+			bindings = <&kp SPACE>, <&kp F>;
 			mods = <(MOD_LCTL|MOD_RCTL)>;
 		};
 		
@@ -94,7 +94,7 @@
 			compatible = "zmk,behavior-mod-morph";
 			label = "enc_shift_tasb";
 			#binding-cells = <0>;
-			bindings = <&kp C_MUTE>, <&kp SPACE>;
+			bindings = <&kp C_MUTE>, <&kp A>;
 			mods = <(MOD_LCTL|MOD_RCTL)>;
 		};
 	};
@@ -113,7 +113,7 @@
         /* ╭──────1──────┬──────2──────┬──────3──────┬──────4──────┬──────5──────┬──────6──────┬──────7───────┬────────8────────┬──────9──────┬──────10──────┬──────11──────┬──────12──────╮ */
 
 			&kp C_MUTE	   	&kp Q		 &kp W 		   &kp E 		 &kp R 		   &kp T 		&kp Y 			&kp U  		 		&kp I 			&kp O 		&kp P 			&kp BSPC
-			&lt RAISE TAB	&kp A		 &kp S 		   &kp D 		 &kp F 		   &kp G 		&kp H			&kp J  		 		&kp K 			&kp L 		&kp SEMI 		&kp SQT
+			&kp TAB	&kp A		 &kp S 		   &kp D 		 &kp F 		   &kp G 		&kp H			&kp J  		 		&kp K 			&kp L 		&kp SEMI 		&kp SQT
 			&sk LSHFT	   	&kp Z		 &kp X 		   &kp C 		 &kp V 		   &kp B 		&kp N			&kp M  		 		&kp COMMA 		&kp DOT 	&kp UP	 		&kp RET
 			&mo FNC 		&kp LGUI 	 &kp LALT 	   &kp LCTRL 	 &mo LOWER 	   &kp BSPC		&kp SPACE		&lt RAISE SPACE 	&kp RCTRL	 	&kp LEFT	&kp DOWN 		&kp RIGHT
 			>;
