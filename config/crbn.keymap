@@ -106,12 +106,12 @@
 			bindings = <
         /* ╭──────1──────┬──────2──────┬──────3──────┬──────4──────┬──────5──────┬──────6──────┬──────7───────┬────────8────────┬──────9──────┬──────10──────┬──────11──────┬──────12──────╮ */
 
-			&kp C_MUTE	   	&enct		 &kp W 		   &kp E 		 &kp R 		   &kp T 		&kp Y 			&kp U  		 		&kp I 			&kp O 		&kp P 			&kp BSPC
+			&kp C_MUTE	   	&kp Q		 &kp W 		   &kp E 		 &kp R 		   &kp T 		&kp Y 			&kp U  		 		&kp I 			&kp O 		&kp P 			&kp BSPC
 			&lt RAISE TAB	&kp A		 &kp S 		   &kp D 		 &kp F 		   &kp G 		&kp H			&kp J  		 		&kp K 			&kp L 		&kp SEMI 		&kp SQT
 			&sk LSHFT	   	&kp Z		 &kp X 		   &kp C 		 &kp V 		   &kp B 		&kp N			&kp M  		 		&kp COMMA 		&kp DOT 	&kp UP	 		&kp RET
 			&mo FNC 		&kp LGUI 	 &kp LALT 	   &kp LCTRL 	 &mo LOWER 	   &kp BSPC		&kp SPACE		&lt RAISE SPACE 	&kp RCTRL	 	&kp LEFT	&kp DOWN 		&kp RIGHT
 			>;
-			sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
 		};
 
 		lower {
@@ -122,7 +122,7 @@
 				&trans			 	&kp F7 		&kp F8 		&kp F9 		&kp LC(LS(M))	&kp F11 	&kp F12 	&kp FSLH 	&trans	 	&trans  		&trans  		&trans
 				&trans 				&trans 		&trans 		&trans 		&trans 			&trans 		&trans 		&mo FNC 	&trans 		&trans 			&trans 			&trans
 			>;
-			sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
+			sensor-bindings = <&inc_dec_kp LC(LS(TAB)) LC(TAB)>;
 		};   
 	
 		raise {
@@ -143,7 +143,7 @@
 				&trans 	&trans 			&trans 		&trans 		&kp LC(LS(M)) 	&trans 			&trans			&trans 			&trans 		&trans 		&trans 	&trans
 				&trans 	&trans 			&trans 		&trans 		&trans 			&trans 			&trans			&trans 			&trans 		&trans 		&trans 	&trans
 			>;
-			sensor-bindings = <&inc_dec_kp UP DOWN>;
+			sensor-bindings = <&inc_dec_kp PG_UP PG_DN>;
 
 		};
 
