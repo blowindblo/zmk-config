@@ -16,18 +16,27 @@
 // flash using
 // west build -p -b nice_nano -- -DSHIELD=crbn -DZMK_CONFIG="C:\Users\Jolene\zmk-config\config"
 
+
+&lt {
+    tapping-term-ms = <150>;
+	}
+
+
 / {
-
-
 	combos {
 		compatible = "zmk,combos";
+		combo_ent {
+			timeout_ms = <40>;
+			key-positions = <14 40>;	// s lower
+			bindings = <&kp RET>;
+		};
 		combo_del {
-		    timeout-ms = <35>;
+		    timeout-ms = <40>;
 		    key-positions = <10 11>;	// p backspace
 		    bindings = <&kp DEL>;
 		};
 		combo_esc {
-		    timeout-ms = <35>;
+		    timeout-ms = <40>;
 		    key-positions = <1 2>;		// q w
 		    bindings = <&kp ESC>;
 		};
@@ -42,38 +51,48 @@
 		    bindings = <&kp QMARK>;
 		};
 		combo_paren_left {
-			timeout-ms = <35>;
+			timeout-ms = <40>;
 		    key-positions = <15 16>;	// d f 
 		    bindings = <&kp LPAR>;
 		};		
 		combo_paren_right {
-			timeout-ms = <35>;
+			timeout-ms = <40>;
 		    key-positions = <19 20>;	// j k 
 		    bindings = <&kp RPAR>;
 		};
 		combo_curly_left {
-			timeout-ms = <35>;
+			timeout-ms = <40>;
 		    key-positions = <14 15>;	// s d 
 		    bindings = <&kp LBRC>;
 		};
 		combo_curly_right {
-			timeout-ms = <35>;
+			timeout-ms = <40>;
 		    key-positions = <20 21>;	// j k
 		    bindings = <&kp RBRC>;
 		};
 		combo_square_left {
-			timeout-ms = <35>;
+			timeout-ms = <40>;
 		    key-positions = <15 28>;	// d v 
 		    bindings = <&kp LBKT>;
 		};
 		combo_square_right {
-			timeout-ms = <35>;
+			timeout-ms = <40>;
 		    key-positions = <20 31>;	// m k
 		    bindings = <&kp RBKT>;
 		};	
 	};
 	
 	behaviors {
+		hm: homerow_mods {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOMEROW_MODS";
+            #binding-cells = <2>;
+            tapping-term-ms = <150>;
+            quick_tap_ms = <0>;
+            flavor = "tap-preferred";
+            bindings = <&kp>, <&kp>;
+        };
+
    		enct: enc_tab {
 			compatible = "zmk,behavior-mod-morph";
 			label = "enc_tab";
@@ -107,8 +126,8 @@
         /* ╭──────1──────┬──────2──────┬──────3──────┬──────4──────┬──────5──────┬──────6──────┬──────7───────┬────────8────────┬──────9──────┬──────10──────┬──────11──────┬──────12──────╮ */
 
 			&kp C_MUTE	   	&kp Q		 &kp W 		   &kp E 		 &kp R 		   &kp T 		&kp Y 			&kp U  		 		&kp I 			&kp O 		&kp P 			&kp BSPC
-			&lt RAISE TAB	&kp A		 &kp S 		   &kp D 		 &kp F 		   &kp G 		&kp H			&kp J  		 		&kp K 			&kp L 		&kp SEMI 		&kp SQT
-			&sk LSHFT	   	&kp Z		 &kp X 		   &kp C 		 &kp V 		   &kp B 		&kp N			&kp M  		 		&kp COMMA 		&kp DOT 	&kp UP	 		&kp RET
+			&lt RAISE TAB	&kp A		 &kp LSHFT S   &hm LALT D 	 &hm LCTRL F	&kp G 		&kp H			&kp J  		 		&kp K 			&kp L 		&kp SEMI 		&kp SQT
+			&kp LSHFT	   	&kp Z		 &kp X 		   &kp C 		 &kp V 		   &kp B 		&kp N			&kp M  		 		&kp COMMA 		&kp DOT 	&kp UP	 		&kp RET
 			&mo FNC 		&kp LGUI 	 &kp LALT 	   &kp LCTRL 	 &mo LOWER 	   &kp BSPC		&kp SPACE		&lt RAISE SPACE 	&kp RCTRL	 	&kp LEFT	&kp DOWN 		&kp RIGHT
 			>;
 			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
