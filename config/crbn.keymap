@@ -17,11 +17,14 @@
 // west build -p -b nice_nano -- -DSHIELD=crbn -DZMK_CONFIG="C:\Users\Jolene\zmk-config\config"
 
 
+
+/ 
+
 &lt {
     tapping-term-ms = <150>;
 	};
-
-/ {
+	
+{
 	combos {
 		compatible = "zmk,combos";
 		combo_ent {
