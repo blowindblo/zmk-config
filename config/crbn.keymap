@@ -18,11 +18,17 @@
 
 
 
-/ {
+/ 
+
+&lt {
+    tapping-term-ms = <150>;
+	};
+	
+{
 	combos {
 		compatible = "zmk,combos";
 		combo_ent {
-			timeout_ms = <40>;
+			timeout-ms = <40>;
 			key-positions = <14 40>;	// s lower
 			bindings = <&kp RET>;
 		};
