@@ -62,7 +62,7 @@
 		};
 		combo_curly_right {
 			timeout-ms = <40>;
-		    key-positions = <20 21>;	// j k
+		    key-positions = <20 21>;	// k l
 		    bindings = <&kp RBRC>;
 		};
 		combo_square_left {
@@ -152,7 +152,7 @@
 		
 		FNC {
 			bindings = <
-				&reset 	&bootloader 	&bt BT_CLR 	&kp UP		&kp LA(F4)		&bt BT_SEL 0 	&bt BT_SEL 1 	&trans 			&kp UP 		&trans		&trans 	&trans
+				&reset 	&bootloader 	&bt BT_CLR 	&kp UP		&kp LA(F4)		&bt BT_SEL 0 	&bt BT_SEL 1 	&bt BT_SEL 2 	&kp UP 		&trans		&trans 	&trans
 				&trans 	&trans 			&kp LEFT 	&kp DOWN 	&kp RIGHT		&kp C_BRI_DN 	&kp C_BRI_UP 	&kp LEFT 		&kp DOWN 	&kp RIGHT 	&trans 	&trans
 				&trans 	&trans 			&trans 		&trans 		&kp LC(LS(M)) 	&trans 			&trans			&trans 			&trans 		&trans 		&trans 	&trans
 				&trans 	&trans 			&trans 		&trans 		&trans 			&trans 			&trans			&trans 			&trans 		&trans 		&trans 	&trans
