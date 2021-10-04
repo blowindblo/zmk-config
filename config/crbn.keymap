@@ -17,7 +17,7 @@
 // west build -p -b nice_nano -- -DSHIELD=crbn -DZMK_CONFIG="C:\Users\Jolene\zmk-config\config"
 
 &kscan0 {
-    debounce-period = <10>;
+    debounce-period = <20>;
 };
 / {
 	combos {
