@@ -1,0 +1,23 @@
+if SHIELD_TWONI_LEFT
+
+config ZMK_KEYBOARD_NAME
+	default "Twoni"
+
+config ZMK_SPLIT_BLE_ROLE_CENTRAL
+	default y
+
+endif
+
+if SHIELD_TWONI_RIGHT
+
+config ZMK_KEYBOARD_NAME
+	default "Twoni Right"
+	
+endif
+
+if SHIELD_TWONI_LEFT || SHIELD_TWONI_RIGHT
+
+config ZMK_SPLIT
+	default y
+
+endif
