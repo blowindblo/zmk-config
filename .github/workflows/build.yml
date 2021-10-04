@@ -48,7 +48,7 @@ jobs:
         run: |
           if [ -n "${{ matrix.shield }}" ]; then
             SHIELD_ARG="-DSHIELD=${{ matrix.shield }}"
-            FILE_NAME="${{ matrix.shield }}".uf2
+            FILE_NAME="${{ matrix.shield }}-${{ matrix.board }}".uf2
             ARTIFACT_NAME="$(echo ${{ matrix.shield }} | perl -pe 's/_left|_right//g')"
           else
             FILE_NAME="${{ matrix.board }}".uf2
