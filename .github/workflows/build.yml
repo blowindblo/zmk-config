@@ -49,7 +49,7 @@ jobs:
           if [ -n "${{ matrix.shield }}" ]; then
             SHIELD_ARG="-DSHIELD=${{ matrix.shield }}"
             FILE_NAME="${{ matrix.shield }}".uf2
-            ARTIFACT_NAME="$(echo ${{ matrix.shield }} | perl -pe 's/_left|_right//g')-${{ matrix.board }}"
+            ARTIFACT_NAME="$(echo ${{ matrix.shield }} | perl -pe 's/_left|_right//g')"
           else
             FILE_NAME="${{ matrix.board }}".uf2
             SHIELD_ARG=
