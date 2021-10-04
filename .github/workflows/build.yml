@@ -41,7 +41,9 @@ jobs:
       - name: CRBN Kconfig file
         run: cat build/zephyr/.config | grep -v "^#" | grep -v "^$"
       - name: Rename zmk.uf2
-        run: cp build/zephyr/zmk.uf2 crbn_nice_nano.uf2
+        run: cp build/zephyr/zmk.uf2 crbn_nice_nano.uf2 
+      - name: Extract some files
+        run: 7z x archive.zip
       - name: Archive (CRBN)
         uses: actions/upload-artifact@v2
         with:
