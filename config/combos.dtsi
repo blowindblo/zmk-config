@@ -1,0 +1,42 @@
+/*                KEY POSITIONS
+
+  ╭────────────────────╮ ╭────────────────────╮
+  │  0   1   2   3   4 │ │  5   6   7   8   9 │
+  │ 10  11  12  13  14 │ │ 15  16  17  18  19 │
+  │ 20  21  22  23  24 │ │ 25  26  27  28  29 │
+  ╰───────────╮ 30  31 │ │ 32  33 ╭───────────╯
+              ╰────────╯ ╰────────╯            */
+
+compatible = "zmk,combos";
+
+#define COMBO(NAME, BINDINGS, KEYPOS, LAYERS, TIMEOUT) \
+  combo_##NAME { \
+    bindings = <BINDINGS>; \
+    key-positions = <KEYPOS>; \
+    layers = <LAYERS>; \
+    timeout-ms = <TIMEOUT>; \
+  };
+
+/* Brackets */
+COMBO(left_brace, &kp LEFT_BRACE, 11 21, BASE, 45)
+COMBO(right_brace, &kp RIGHT_BRACE, 18 28, BASE, 45)
+COMBO(left_bracket, &kp LEFT_BRACKET, 12 22, BASE, 45)
+COMBO(right_bracket, &kp RIGHT_BRACKET, 17 27, BASE, 45)
+COMBO(left_parenthesis, &kp LPAR, 12 13, BASE, 45)
+COMBO(right_parenthesis, &kp RPAR, 16 17, BASE, 45)
+
+COMBO(escape, &kp ESC, 0 1, ALL, 45)
+COMBO(tab, &kp TAB, 10 11, ALL, 45)
+COMBO(slash, &kp FSLH, 27 28, ALL, 45)
+COMBO(question_mark, &kp QMARK, 28 29, ALL, 45)
+
+COMBO(semi_colon, &kp SEMI, 7 17, ALL, 45)
+COMBO(colon, &kp COLON, 8 18, ALL, 45)
+COMBO(aprostrophe, &kp APOS, 17 18, ALL, 45)
+COMBO(quote, &kp DQT, 7 8, ALL, 45)
+
+COMBO(music_play_pause, &kp C_PP, 21 23, ALL, 60)
+COMBO(music_next, &kp C_PREV, 22 23, ALL, 60)
+COMBO(music_prev, &kp C_NEXT, 21 22, ALL, 60)
+
+COMBO(win_gui, &kp LGUI, 20 21, ALL, 60)
