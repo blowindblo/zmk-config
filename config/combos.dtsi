@@ -26,7 +26,7 @@ COMBO(left_parenthesis, &kp LPAR, 12 13, BASE, 45)
 COMBO(right_parenthesis, &kp RPAR, 16 17, BASE, 45)
 
 COMBO(escape, &kp ESC, 0 1, ALL, 45)
-COMBO(tab, &kp TAB, 10 11, ALL, 45)
+COMBO(tab, &kp TAB, 10 11, ALL, 45)                   
 COMBO(slash, &kp FSLH, 27 28, ALL, 45)
 COMBO(question_mark, &kp QMARK, 28 29, ALL, 45)
 
@@ -36,7 +36,7 @@ COMBO(aprostrophe, &kp APOS, 17 18, ALL, 45)
 COMBO(quote, &kp DQT, 7 8, ALL, 45)
 
 COMBO(music_play_pause, &kp C_PP, 21 23, ALL, 60)
-COMBO(music_next, &kp C_PREV, 22 23, ALL, 60)
-COMBO(music_prev, &kp C_NEXT, 21 22, ALL, 60)
-
+COMBO(music_prev, &kp C_PREV, 21 22, ALL, 60)
+COMBO(music_next, &kp C_NEXT, 22 23, ALL, 60)
+ 
 COMBO(win_gui, &kp LGUI, 20 21, ALL, 60)
