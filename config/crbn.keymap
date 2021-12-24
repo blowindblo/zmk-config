@@ -82,7 +82,7 @@
 		combo_game_layer {
 			timeout-ms = <40>;
 		    key-positions = <13 14 15 16>;	// a s d f 
-		    bindings = <&tog 5>;
+		    bindings = <&tog GAME>;
 		};		
 	};
 	
@@ -169,7 +169,7 @@
 			&kp ESC	   		&kp Q		 &kp W 		   &kp E 		 &kp R 		   &kp T 		&kp Y 			&kp U  		 		&kp I 			&kp O 		&kp P 			&kp BSPC
 			&kp TAB			&kp A		 &kp S 		   &kp D 		 &kp F 		   &kp G 		&kp H			&kp J  		 		&kp K 			&kp L 		&kp SEMI 		&kp SQT
 			&kp LSHFT	   	&kp Z		 &kp X 		   &kp C 		 &kp V 		   &kp B 		&kp N			&kp M  		 		&kp COMMA 		&kp DOT 	&kp UP	 		&kp RET
-			&mo FNC 		&kp LGUI 	 &kp LALT 	   &kp LCTRL 	 &mo LOWER 	   &kp SPACE	s&kp SPACE		&lt RAISE SPACE 	&kp RCTRL	 	&kp LEFT	&kp DOWN 		&kp RIGHT
+			&mo FNC 		&kp LGUI 	 &kp LALT 	   &kp LCTRL 	 &mo LOWER 	   &kp SPACE	&kp SPACE		&lt RAISE SPACE 	&kp RCTRL	 	&kp LEFT	&kp DOWN 		&kp RIGHT
 			>;
 			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
 		};
@@ -177,8 +177,6 @@
 
 	};
 };
-
-
 
 &lt {
     tapping-term-ms = <150>;
