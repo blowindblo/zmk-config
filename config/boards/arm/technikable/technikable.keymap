@@ -16,7 +16,7 @@
 #define TAB_L 4
 
 // Using layer taps on thumbs, having quick tap as well helps w/ repeating space/backspace
-&lt { quick_tap_ms = <200>; };
+&lt { quick_tap_ms = <180>; };
 
 #define BT(n) BT_SEL n
 
@@ -56,10 +56,10 @@
             label = "Base";
             bindings = <
  &lt SYM_L ESC    &kp Q      &kp W      &kp E       &kp R          &kp T          &kp Y            &kp U          &kp I       &kp O      &kp P         &kp BKSP
- &lt TAB_L TAB    &kp A      &kp S      &kp D      &hm LSHFT F          &kp G          &kp H            &hm LSHFT J          &kp K       &kp L      &kp SEMI      &kp QUOT
- &kp LSHFT  &kp Z      &kp X      &kp C       &kp V          &kp B          &kp N            &kp M          &kp COMMA   &kp DOT    &kp FSLH      &kp RET
+ &lt TAB_L TAB    &kp A      &kp S      &kp D      &hm LSHFT F     &kp G          &kp H            &hm LSHFT J          &kp K       &kp L      &kp SEMI      &kp QUOT
+ &kp LSHFT      &kp Z      &kp X      &kp C       &kp V             &kp B          &kp N            &kp M          &kp COMMA   &kp DOT    &kp FSLH      &kp RET
                        &kp LGUI  &kp LALT    &kp LCTRL      &mo NAV_L      &lt NUM_L SPACE        &mo NUM_L      &kp RALT    &kp RCTRL
-#
+
             >;
         };
 
@@ -68,7 +68,7 @@
             bindings = <
 &kp C_PP	&kp LS(N1) 	&kp LS(N2) 	&kp LS(N3) 	&kp LS(N4) 		&kp LS(N5) 	&kp LS(N6) 	&kp LS(N7) 		&kp LS(N8) 		&kp LS(N9) 		&kp LS(N0) 		&kp DEL
 &kp GT		&kp F1 		&kp F2 		&kp F3 		&hm LSHFT F4 	&kp F5  	&kp F6 	 	&hm LSHFT HOME 		&kp END 		&kp PG_UP		&kp PG_DN		&kp PIPE
-&trans		&kp F7 		&kp F8 		&kp F9 		&kp F10	    &kp F11 	&kp F12 	&kp LC(LEFT) 	&kp LC(RIGHT)	&trans  		&kp BSLH  		&trans
+&trans		&kp F7 		&kp F8 		&kp F9 		&kp F10	    &kp F11 	    &kp F12 	&kp LC(LEFT) 	&kp LC(RIGHT)	&trans  		&kp BSLH  		&trans
                        &kp LGUI  &kp LALT    &kp LCTRL      &mo NAV_L      &lt NUM_L SPACE        &mo NUM_L      &kp RALT    &kp RCTRL
             >;
         };
@@ -76,9 +76,9 @@
         num_layer {
             label = "Num";
             bindings = <
-&kp C_PP 	&kp MINUS 		&kp N1 		&kp N2 		&kp N3		&kp GRAVE		&kp N0 		&kp N1 		&kp N2 		&kp N3 			&kp PLUS 		&kp DEL
+&kp C_PP 	&kp MINUS 	&kp N1 		&kp N2 		&kp N3		&kp GRAVE		&kp N0 		&kp N1 		&kp N2 		&kp N3 			&kp PLUS 		&kp DEL
 &kp DEL 	&kp N0  	&kp N4 		&kp N5 		&hm LSHFT N6		&kp TILDE		&kp EQUAL 	&hm LSHFT N4 		&kp N5 		&kp N6 			&kp MINUS 		&kp LT
-&trans 		&kp DOT 	&kp N7 		&kp N8 		&kp N9		&kp BSLH 		&kp UNDER 	&kp N7 		&kp N8 		&kp N9 			&kp DOT 		&kp COMMA
+&trans 		&kp DOT 	&kp N7 		&kp N8 		&kp N9		        &kp BSLH 		&kp UNDER 	&kp N7 		&kp N8 		&kp N9 			&kp DOT 		&kp COMMA
                      &trans    &trans      &trans    &none         &none     &trans        &trans      &trans
             >;
         };
@@ -86,14 +86,14 @@
         sym_layer {
             label = "Sym";
             bindings = <
-			&trans	&reset 	&bootloader 	&bt BT_CLR 			&kp LA(F4)		&bt BT_SEL 0 	&bt BT_SEL 1 	&bt BT_SEL 2 	&kp UP 		&trans		&trans 	&trans 	
-			&trans	&trans 	&trans 			&trans      &trans		&kp C_BRI_DN 	&kp C_BRI_UP 	&kp LEFT 		&kp DOWN 	&kp RIGHT 	&trans 	&trans 	
-			&trans	&trans 	&trans 			&trans 		&trans 		&kp LC(LS(M)) 	&trans 			&trans			&trans 			&trans 		&trans 		&trans 	
+			&trans	&reset 	&bootloader 	&bt BT_CLR 		&kp LA(F4)		&bt BT_SEL 0 	&bt BT_SEL 1 	&bt BT_SEL 2 	&kp UP 		&trans		&trans 	&trans 	
+			&trans	&trans 	&trans 			&trans          &trans		    &kp C_BRI_DN 	&kp C_BRI_UP 	&kp LEFT 		&kp DOWN 	&kp RIGHT 	&trans 	&trans 	
+			&trans	&trans 	&trans 			&trans 		    &trans 		    &kp LC(LS(M)) 	&trans 			&trans			&trans 		&trans 		&trans 		&trans 	
                       &trans    &trans      &trans          &trans       &trans    &trans  &trans         &trans
             >;
         };
         tab_layer {
-            label = "Num";
+            label = "Tab";
             bindings = <
 &kp C_PP 	&kp LC(LEFT) 	&kp UP	 	&kp LC(RIGHT) 	&kp LA(F4)		&kp GRAVE		&kp N0 		&kp N1 		&kp N2 		&kp N3 			&kp PLUS 		&kp DEL
 &trans 	    &kp LEFT 		&kp DOWN 	&kp RIGHT 		&kp F5			&kp TILDE		&kp EQUAL 	&kp N4 		&kp N5 		&kp N6 			&kp MINUS 		&kp LT
