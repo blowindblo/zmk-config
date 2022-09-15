@@ -17,6 +17,7 @@ compatible = "zmk,combos";
     timeout-ms = <TIMEOUT>; \
   };
 
+
 /* Brackets */
 COMBO(left_brace, &kp LEFT_BRACE, 14 15, BAS_L, 40)
 COMBO(right_brace, &kp RIGHT_BRACE, 20 21, BAS_L, 40)
@@ -24,19 +25,3 @@ COMBO(left_bracket, &kp LEFT_BRACKET, 15 28, BAS_L, 40)
 COMBO(right_bracket, &kp RIGHT_BRACKET, 20 31, BAS_L, 45)
 COMBO(left_parenthesis, &kp LPAR, 15 16, BAS_L, 40)
 COMBO(right_parenthesis, &kp RPAR, 19 20, BAS_L, 40)
-
-COMBO(escape, &kp ESC, 0 1, ALL, 45)
-COMBO(tab, &kp TAB, 10 11, ALL, 35)                   
-COMBO(slash, &kp FSLH, 27 28, ALL, 45)
-COMBO(question_mark, &kp QMARK, 28 29, ALL, 45)
-
-COMBO(semi_colon, &kp SEMI, 7 17, ALL, 35)
-COMBO(colon, &kp COLON, 8 18, ALL, 35)
-COMBO(aprostrophe, &kp APOS, 17 18, ALL, 35)
-COMBO(quote, &kp DQT, 7 8, ALL, 35)
-
-COMBO(music_play_pause, &kp C_PP, 21 23, ALL, 35)
-COMBO(music_prev, &kp C_PREV, 21 22, ALL, 35)
-COMBO(music_next, &kp C_NEXT, 22 23, ALL, 35)
- 
-COMBO(win_gui, &kp LGUI, 20 21, ALL, 60)
