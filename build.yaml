@@ -16,10 +16,10 @@ include:
   - board: technikable
   - shield: crbn
     board: nice_nano
-  # - shield: twoni_left
-  #   board: nice_nano_v2
-  # - shield: twoni_right
-  #   board: nice_nano
+  - shield: twoni_left
+    board: nice_nano_v2
+  - shield: twoni_right
+    board: nice_nano
   # - shield: cradio_left
   #   board: nice_nano
   # - shield: cradio_right
